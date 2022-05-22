@@ -11,7 +11,7 @@ public class SpringStarterApplication {
     public static void main(String[] args) {
 
         ApplicationContext ctx = new AnnotationConfigApplicationContext(SpringConfig.class);
-        Car bean = ctx.getBean("carBean", Car.class);
+        Car bean = ctx.getBean("beanFromClass", Car.class);
         bean.getEngineModel();
 
 
